@@ -1,7 +1,7 @@
 package com.gridnine.testing.filter.impl;
 
 import com.gridnine.testing.entity.Flight;
-import com.gridnine.testing.filter.FlightFilter;
+import com.gridnine.testing.filter.Filter;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 /**
  * Filters out where the departure date and time of the first segment is before the current date and time.
  */
-public class DepartureDateFilter implements FlightFilter {
+public class DepartureDateFilter implements Filter {
 
     /**
      * Filters the given list of flights and returns only the flights where the departure date and time of the first segment

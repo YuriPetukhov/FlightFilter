@@ -9,7 +9,7 @@ import java.util.List;
  * A filter takes a list of flights and returns a filtered list of flights,
  * that satisfy the filter criteria.
  */
-public interface FlightFilter {
+public interface Filter {
 
     /**
      * Filters the given list of flights.

@@ -2,7 +2,7 @@ package com.gridnine.testing.filter.impl;
 
 import com.gridnine.testing.entity.Flight;
 import com.gridnine.testing.entity.Segment;
-import com.gridnine.testing.filter.FlightFilter;
+import com.gridnine.testing.filter.Filter;
 
 import java.time.Duration;
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 /**
  * Filters out flights where the total time spent on the ground exceeds two hours.
  */
-public class GroundTimeFilter implements FlightFilter {
+public class GroundTimeFilter implements Filter {
 
     private static final Duration MAX_GROUND_TIME = Duration.ofHours(2);
 

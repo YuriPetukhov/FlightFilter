@@ -1,7 +1,7 @@
 package com.gridnine.testing.filter.impl;
 
 import com.gridnine.testing.entity.Flight;
-import com.gridnine.testing.filter.FlightFilter;
+import com.gridnine.testing.filter.Filter;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 /**
  * Filters out flights where the arrival date and time of any segment is before the departure date and time.
  */
-public class ArrivalBeforeDepartureFilter implements FlightFilter {
+public class ArrivalBeforeDepartureFilter implements Filter {
 
     /**
      * Filters the given list of flights and returns only the flights where the arrival date and time of each segment
